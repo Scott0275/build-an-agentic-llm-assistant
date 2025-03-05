@@ -26,7 +26,7 @@ export class AmplifyChatuiStack extends cdk.Stack {
 
     // -------------------------------------------------------------------------
 
-    // Use GitHub as the source code provider
+    // Use GitHub as the source, code provider
     const amplifyChatUI = new amplify.App(this, 'AmplifyChatUI', {
       autoBranchDeletion: true,
       sourceCodeProvider: new amplify.GitHubSourceCodeProvider({

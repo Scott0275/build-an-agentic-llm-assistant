@@ -32,7 +32,7 @@ export class AmplifyChatuiStack extends cdk.Stack {
       sourceCodeProvider: new amplify.GitHubSourceCodeProvider({
         owner: 'Scott0275', // Replace with your GitHub username or organization
         repository: 'build-an-agentic-llm-assistant', // Replace with your repository name
-        oauthToken: cdk.SecretValue.secretsManager('github-access-token-for-amplify-cicd1') // Replace with your Secrets Manager secret name
+        oauthToken: cdk.SecretValue.secretsManager("github-access-token-for-amplify-cicd2") // Replace with your Secrets Manager secret name
       }),
       platform: amplify.Platform.WEB_COMPUTE,
       environmentVariables: {

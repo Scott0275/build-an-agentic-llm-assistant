@@ -7,6 +7,7 @@ frontend:
       commands:
         - nvm use 18
         - npm ci
+        - npm install @aws-amplify/adapter-nextjs
         - export NODE_PATH=$NODE_PATH:./node_modules # Added this line
         - echo $NODE_PATH # Added this line
         - ls -alh node_modules/@aws-amplify/adapter-nextjs #Added this line

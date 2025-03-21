@@ -2,8 +2,7 @@
 const { withAmplify } = require('@aws-amplify/adapter-nextjs');
 
 const nextConfig = {
-  // Your Next.js config here
-  // Any other next.js configurations go here.
+  reactStrictMode: true,
 };
 
 module.exports = withAmplify(nextConfig);

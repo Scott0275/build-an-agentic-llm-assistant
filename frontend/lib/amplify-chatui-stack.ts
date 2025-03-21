@@ -3,6 +3,11 @@ import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as ssm from 'aws-cdk-lib/aws-ssm';
 import path = require('path');
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+import * as apigateway from "aws-cdk-lib/aws-apigateway";
+import * as cognito from 'aws-cdk-lib/aws-cognito';
+import * as iam from 'aws-cdk-lib/aws-iam';
+import path = require('path');
 
 export class AmplifyChatuiStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {

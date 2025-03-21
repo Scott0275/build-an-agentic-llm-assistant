@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@aws-amplify/adapter-nextjs": "^1.5.6"
+  }
+}

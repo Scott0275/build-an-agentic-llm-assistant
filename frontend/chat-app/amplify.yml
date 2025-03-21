@@ -1,4 +1,3 @@
-
 # https://docs.aws.amazon.com/amplify/latest/userguide/deploy-nextjs-app.html
 
 version: 1
@@ -11,7 +10,6 @@ frontend:
     build:
       commands:
         - npm run build
-        - env | grep -e NEXT_PUBLIC_ >> .env.production || true
   artifacts:
     baseDirectory: .next
     files:

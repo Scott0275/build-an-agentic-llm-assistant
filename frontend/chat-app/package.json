@@ -14,7 +14,6 @@
     "@tailwindcss/typography": "^0.5.13",
     "aws-amplify": "^6.0.12",
     "next": "latest",
-    "@aws-amplify/adapter-nextjs": "^2.0.0",
     "react": "^18",
     "react-dom": "^18",
     "react-markdown": "^9.0.1"

@@ -8,6 +8,7 @@ applications:
             - ls -alh
             - node -v
             - npm -v
+            - npm install @aws-amplify/adapter-nextjs
             - npm ci
         build:
           commands:
@@ -16,7 +17,8 @@ applications:
             - ls -alh .next
             - ls -alh .
       artifacts:
-        baseDirectory: .next
+        baseDirectory: frontend/chat-app/.next
+
         files:
           - "**/*"
       cache:

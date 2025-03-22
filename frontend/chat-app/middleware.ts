@@ -1,8 +1,5 @@
-import { createServerRunner } from '@aws-amplify/adapter-nextjs';
-
 export const middleware = createServerRunner({
-  config: {
-    amplifyConfig: {
+    resources: {
       Auth: {
         Cognito: {
           userPoolId: process.env.NEXT_PUBLIC_USER_POOL_ID,
@@ -12,9 +9,5 @@ export const middleware = createServerRunner({
         },
       },
     },
-  },
-});
-
-export const config = {
-  matcher: ['/api/:path*'], // Apply middleware only to API routes
-};
+  });
+  
